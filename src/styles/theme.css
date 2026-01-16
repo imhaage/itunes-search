@@ -1,5 +1,12 @@
 @layer theme {
 	:root {
+		--spacing-md: 16px;
+		--spacing-xl: calc(var(--spacing-md) * 4);
+		--spacing-lg: calc(var(--spacing-md) * 2);
+		--spacing-sm: calc(var(--spacing-md) / 2);
+		--spacing-xs: calc(var(--spacing-md) / 4);
+		--spacing-default: var(--spacing-sm);
+
 		/* tailwind color scale : slate */
 		--color-slate-50: oklch(0.984 0.003 247.858);
 		--color-slate-100: oklch(0.968 0.007 247.896);
@@ -51,5 +58,9 @@
 		--color-neutral-800: oklch(0.269 0 0);
 		--color-neutral-900: oklch(0.205 0 0);
 		--color-neutral-950: oklch(0.145 0 0);
+
+		--font-primary: system-ui, Avenir, Helvetica, Arial, sans-serif;
+		--color-fg: var(--color-slate-50);
+		--color-bg: var(--color-slate-950);
 	}
 }

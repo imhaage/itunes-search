@@ -1,0 +1,31 @@
+@layer layout {
+	.app {
+		display: grid;
+		grid-template-rows: 40px 1fr;
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas:
+			"header header"
+			"sidebar main-content";
+		height: 100svh;
+	}
+
+	.app header {
+		grid-area: header;
+		display: flex;
+		align-items: center;
+		padding-inline: var(--spacing-default);
+		background-color: var(--color-gray-800);
+	}
+
+	.app .sidebar {
+		grid-area: sidebar;
+		padding: var(--spacing-default);
+		background-color: var(--color-gray-700);
+	}
+
+	.app main {
+		grid-area: main-content;
+		padding: var(--spacing-default);
+		background-color: var(--color-gray-900);
+	}
+}
